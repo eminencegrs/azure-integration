@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\Seneca.Azure.Integration.Api", "src\Seneca.Azure.Integration.Api\Seneca.Azure.Integration.Api.csproj", "{43DC551E-4CF1-4B70-A90A-F41B6400734B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seneca.Azure.Integration.DataLake", "src\Seneca.Azure.Integration.DataLake\Seneca.Azure.Integration.DataLake.csproj", "{F834E082-DC9C-4DE0-8EFC-6CC606556243}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43DC551E-4CF1-4B70-A90A-F41B6400734B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DC551E-4CF1-4B70-A90A-F41B6400734B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DC551E-4CF1-4B70-A90A-F41B6400734B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DC551E-4CF1-4B70-A90A-F41B6400734B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F834E082-DC9C-4DE0-8EFC-6CC606556243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F834E082-DC9C-4DE0-8EFC-6CC606556243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F834E082-DC9C-4DE0-8EFC-6CC606556243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F834E082-DC9C-4DE0-8EFC-6CC606556243}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
