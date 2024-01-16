@@ -1,8 +1,8 @@
 namespace Seneca.Azure.Integration.DataLake;
 
-public class DataLakeSettings
+public record class DataLakeSettings
 {
-    public static readonly string SectionName = "DataLakeSettings";
-    public string AccountName { get; set; } = null!;
-    public string AccountKey { get; set; } = null!;
+    public static readonly string SectionName = "Azure:DataLake";
+    public string AccountName { get; init; } = null!;
+    public string AccountKey { get; init; } = null!;
 }
