@@ -8,14 +8,15 @@ using Microsoft.Extensions.Options;
 
 namespace Seneca.Azure.Integration.DataLake;
 
-public class DataLakeService
+[Obsolete("Will be removed. Use StorageService instead.")]
+public class DataLakeServiceV1
 {
     private const string FileSystemDefaultName = "default-file-system";
     
     private readonly DataLakeServiceClient serviceClient;
     private readonly DataLakeSettings settings;
     
-    public DataLakeService(IOptions<DataLakeSettings> options)
+    public DataLakeServiceV1(IOptions<DataLakeSettings> options)
     {
         this.settings = options.Value;
         var credential = new StorageSharedKeyCredential(this.settings.AccountName, this.settings.AccountKey);

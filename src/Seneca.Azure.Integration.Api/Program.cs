@@ -5,7 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<DataLakeSettings>(builder.Configuration.GetSection(DataLakeSettings.SectionName));
 
-builder.Services.AddScoped<DataLakeService>();
+// TODO: register all dependencies.
+builder.Services.AddScoped<DataLakeServiceV1>();
 
 builder.Services.AddAzureClients(clientBuilder =>
 {
@@ -19,7 +20,6 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

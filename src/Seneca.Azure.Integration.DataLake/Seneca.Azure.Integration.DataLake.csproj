@@ -7,8 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Azure.Storage.Files.DataLake" Version="12.17.1" />
-      <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
+        <PackageReference Include="Azure.Identity" Version="1.10.4" />
+        <PackageReference Include="Azure.Storage.Files.DataLake" Version="12.17.1" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
     </ItemGroup>
 
 </Project>
