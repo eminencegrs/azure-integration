@@ -4,7 +4,7 @@ using Microsoft.Extensions.Options;
 
 namespace Seneca.Azure.Integration.DataLake;
 
-internal class StorageService
+internal class StorageService : IStorageService
 {
     private readonly ILogger<StorageService> logger;
     private readonly DataLakeSettings settings;
@@ -26,11 +26,6 @@ internal class StorageService
     }
 
     public Task GenerateToken(string name)
-    {
-        throw new NotImplementedException();
-    }
-
-    public async Task UploadFile(string directoryName, string fileName, Stream stream)
     {
         throw new NotImplementedException();
     }

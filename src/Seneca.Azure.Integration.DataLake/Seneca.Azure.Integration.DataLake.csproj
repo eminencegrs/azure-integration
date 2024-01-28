@@ -9,8 +9,16 @@
     <ItemGroup>
         <PackageReference Include="Azure.Identity" Version="1.10.4" />
         <PackageReference Include="Azure.Storage.Files.DataLake" Version="12.17.1" />
+        <PackageReference Include="Microsoft.Extensions.Azure" Version="1.7.1" />
         <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+            <_Parameter1>Seneca.Azure.Integration.DataLake.UnitTests</_Parameter1>
+        </AssemblyAttribute>
     </ItemGroup>
 
 </Project>

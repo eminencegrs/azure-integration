@@ -1,21 +1,11 @@
-using Microsoft.Extensions.Azure;
-using Seneca.Azure.Integration.DataLake;
+using Seneca.Azure.Integration.DataLake.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.Configure<DataLakeSettings>(builder.Configuration.GetSection(DataLakeSettings.SectionName));
-
-// TODO: register all dependencies.
-builder.Services.AddScoped<DataLakeServiceV1>();
-
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    clientBuilder.AddDataLakeServiceClient(builder.Configuration.GetSection(DataLakeSettings.SectionName));
-});
+builder.Services.AddDataLake(builder.Configuration);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 builder.Services.AddControllers();
 
 var app = builder.Build();
@@ -27,7 +17,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.MapControllers();
-
 app.Run();
